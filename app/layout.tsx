@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import GlobalHeader from "@/components/global/header";
-import { SmoothScrollProvider } from "@/utils/smoothscrollProvider";
 import CustomCursor from "@/components/global/custom-cursor";
 import Noise from "@/components/global/noise";
 import Preloader from "../components/global/preloader";
-import ReactLenis from "@studio-freight/react-lenis";
 import Lenis from "@/components/global/lenis";
-
-const inter = Inter({ subsets: ["latin"] });
+import FloatingNav from "@/components/global/floating-nav";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -23,12 +19,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className} antialiased overflow-x-hidden`}>
+			<body className="antialiased">
 				<Lenis>
 					<Noise />
 					<Preloader />
-					<GlobalHeader />
 					<CustomCursor />
+					<FloatingNav />
 					{children}
 				</Lenis>
 			</body>

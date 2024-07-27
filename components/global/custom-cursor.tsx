@@ -1,8 +1,9 @@
 "use client";
+import { useGsap } from "@/utils";
 import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
 
 export default function CustomCursor() {
+	const { gsap } = useGsap();
 	const isActive = false;
 	const mouse = useRef({ x: 0, y: 0 });
 	const delayedMouse = useRef({ x: 0, y: 0 });
@@ -25,8 +26,8 @@ export default function CustomCursor() {
 		const { x, y } = delayedMouse.current;
 
 		delayedMouse.current = {
-			x: lerp(x, mouse.current.x, 0.3),
-			y: lerp(y, mouse.current.y, 0.3),
+			x: lerp(x, mouse.current.x, 0.4),
+			y: lerp(y, mouse.current.y, 0.4),
 		};
 
 		moveCircle(delayedMouse.current.x, delayedMouse.current.y);
@@ -35,7 +36,7 @@ export default function CustomCursor() {
 	};
 
 	const moveCircle = (x: number, y: number) => {
-		gsap.set(circle.current, { x, y, xPercent: -50, yPercent: -50 });
+		gsap.set(circle.current, { x, y, xPercent: -20, yPercent: -15 });
 	};
 
 	useEffect(() => {
@@ -57,7 +58,7 @@ export default function CustomCursor() {
 			}}
 		>
 			<img
-				src="/point.svg"
+				src="/mouse.svg"
 				alt="cursor"
 				style={{ width: "100%", height: "100%" }}
 			/>

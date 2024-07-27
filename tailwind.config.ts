@@ -25,6 +25,15 @@ const config: Config = {
 			},
 
 			keyframes: {
+				spinn: {
+					from: {
+						transform: "rotate(180deg)",
+					},
+					to: {
+						transform: "rotate(360deg)",
+					},
+				},
+
 				fadeIn: {
 					from: { opacity: "0" },
 					to: { opacity: "1" },
@@ -43,6 +52,7 @@ const config: Config = {
 				fadeIn: "fadeIn .3s ease-in-out",
 				carousel: "marquee 10s linear infinite",
 				blink: "blink 1.4s both infinite",
+				spinn: "spinn 2s linear infinite",
 			},
 		},
 	},
