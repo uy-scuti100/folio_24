@@ -50,7 +50,7 @@ export default function HeroSection() {
 					</div>
 					<div ref={connectRef} className="mt-5">
 						<button className="bg-black px-8 py-3 rounded-full uppercase text-white">
-							Let's work together
+							Let&rsquo;s work together
 						</button>
 					</div>
 				</div>
