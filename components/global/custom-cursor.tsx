@@ -50,7 +50,7 @@ export default function CustomCursor() {
 
 	return (
 		<div
-			className="cursor"
+			className="cursor hidden md:block"
 			ref={circle}
 			style={{
 				width: size,

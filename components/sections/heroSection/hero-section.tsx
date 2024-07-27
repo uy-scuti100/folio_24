@@ -41,7 +41,11 @@ export default function HeroSection() {
 	}, []);
 	return (
 		<div>
-			<div ref={sectionRef} className=" w-full top-0 left-0 right-0 h-screen">
+			<div
+				style={{ height: "100dvh" }}
+				ref={sectionRef}
+				className=" w-full top-0 left-0 right-0"
+			>
 				<div className="absolute left-0 bottom-20 w-full p-4">
 					<h1 className="sr-only"> Hussain Yusuf</h1>
 					<Name />

@@ -54,7 +54,7 @@ export default function Header() {
 								<div key={i}>
 									<Link
 										href={link.href}
-										className="tracking-tighter uppercase  hover:underline text-ash text-xs font-medium link opacity-0 translate-y-[-40px]"
+										className="uppercase  hover:underline text-ash text-sm font-bold link opacity-0 translate-y-[-40px]"
 									>
 										{link.label}
 									</Link>
