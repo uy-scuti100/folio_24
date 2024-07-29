@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Name from "./name";
 import AnimatedWords from "@/components/global/animatedWords";
 import { connect } from "http2";
+import Link from "next/link";
 
 export default function HeroSection() {
 	const { useGSAP, gsap, ScrollTrigger } = useGsap();
@@ -44,18 +45,21 @@ export default function HeroSection() {
 			<div
 				style={{ height: "100dvh" }}
 				ref={sectionRef}
-				className=" w-full top-0 left-0 right-0"
+				className="top-0 left-0 right-0 w-full "
 			>
-				<div className="absolute left-0 bottom-20 w-full p-4">
+				<div className="absolute left-0 w-full p-4 bottom-5">
 					<h1 className="sr-only"> Hussain Yusuf</h1>
 					<Name />
-					<div className="mt-3 max-w-[350px] md:max-w-[500px]">
+					<div className="mt-20 max-w-[350px] md:max-w-[500px]">
 						<AnimatedWords sentence="Focused on creating high-performing websites that drive business success, combining clean design, and accessible user interfaces for an exceptional user experience." />
 					</div>
 					<div ref={connectRef} className="mt-5">
-						<button className="bg-black px-8 py-3 rounded-full uppercase text-white">
+						<Link
+							href={"https://cal.com/hussain-yusuf-cr1t4i/15min"}
+							className="px-8 py-3 text-white uppercase bg-black rounded-full"
+						>
 							Let&rsquo;s work together
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

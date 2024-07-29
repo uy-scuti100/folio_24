@@ -3,10 +3,10 @@ import HeroSection from "@/components/sections/heroSection/hero-section";
 import Services from "@/components/sections/serviceSection/service-section";
 export default function Page() {
 	return (
-		<div className="overflow-x-hidden">
+		<div className="h-screen overflow-hidden">
 			<Header />
 			<HeroSection />
-			<Services />
+			{/* <Services /> */}
 		</div>
 	);
 }

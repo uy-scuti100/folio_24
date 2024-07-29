@@ -47,12 +47,12 @@ export default function Name() {
 	// clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); close
 
 	return (
-		<div className="flex items-center gap-2">
+		<div className="flex flex-wrap items-center gap-5">
 			<svg
 				ref={svg1Ref}
-				className="h-fit w-1/2 sm:w-[40% "
+				className="w-1/2 "
 				width="981"
-				height="162"
+				height="fit"
 				viewBox="0 0 981 162"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
@@ -103,9 +103,9 @@ export default function Name() {
 
 			<svg
 				ref={svg2Ref}
-				className="h-fit w-[40%] sm:w-[40%]"
+				className="w-[40%] sm:w-[40%]"
 				width="739"
-				height="150"
+				height="fit"
 				viewBox="0 0 739 162"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"

@@ -35,9 +35,9 @@ export default function Header() {
 	}, []);
 
 	return (
-		<header className="z-20 transition-all duration-500 ease-in-out absolute w-full">
-			<nav className="px-3 py-3 mb-6 mt-3 ">
-				<div className="flex justify-between items-start sm:items-center">
+		<header className="absolute z-20 w-full transition-all duration-500 ease-in-out">
+			<nav className="px-3 py-3 mt-3 mb-6 ">
+				<div className="flex items-start justify-between sm:items-center">
 					<div
 						ref={logoRef}
 						className="relative w-[80px] sm:w-[100px] h-[32px] opacity-0 translate-y-[10px]"
@@ -45,7 +45,7 @@ export default function Header() {
 						<Logo />
 					</div>
 
-					<div>
+					{/* <div>
 						<menu
 							ref={linkMenu}
 							className="flex flex-col items-start sm:items-center sm:flex-row sm:gap-2 menuList"
@@ -61,7 +61,7 @@ export default function Header() {
 								</div>
 							))}
 						</menu>
-					</div>
+					</div> */}
 				</div>
 			</nav>
 		</header>

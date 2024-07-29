@@ -59,7 +59,7 @@ html {
 	width: 100%;
 	background-color: var(--color-bg);
 	color: var(--color-black);
-	cursor: none;
+	/* cursor: none; */
 }
 
 h1,
