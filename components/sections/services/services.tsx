@@ -1,3 +1,3 @@
 export default function Service() {
-	return <div>Service</div>;
+	return <div className="w-full">Service</div>;
 }
