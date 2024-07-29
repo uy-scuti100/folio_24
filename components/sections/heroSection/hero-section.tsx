@@ -56,7 +56,7 @@ export default function HeroSection() {
 					<div ref={connectRef} className="mt-5">
 						<Link
 							href={"https://cal.com/hussain-yusuf-cr1t4i/15min"}
-							className="px-8 py-3 text-white uppercase bg-black rounded-full"
+							className="px-8 py-3 text-white uppercase transition-all duration-500 bg-black rounded-full hover:scale-110 hover:underline"
 						>
 							Let&rsquo;s work together
 						</Link>
